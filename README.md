@@ -10,7 +10,7 @@
 ## VIDEO DEMO
 <p align="center">
 <a href="#">
-  <img src="https://raw.githubusercontent.com/UndeadSec/EvilURL/master/video.jpg" />
+  <img src="https://raw.githubusercontent.com/UndeadSec/EvilURL/master/video.png" />
 </a></p>
 
 ### CLONE
