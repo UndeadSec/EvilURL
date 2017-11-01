@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/UndeadSec/EvilURL/master/Screens/evilurl.png">
+  <img src="https://raw.githubusercontent.com/UndeadSec/EvilURL/master/evilurl.png">
 </p>
 
 <h1 align="center">EvilURL</h1>
@@ -13,7 +13,7 @@
 ## VIDEO DEMO
 <p align="center">
 <a href="#">
-  <img src="https://raw.githubusercontent.com/UndeadSec/EvilURL/master/Screens/video.jpg" />
+  <img src="https://raw.githubusercontent.com/UndeadSec/EvilURL/master/video.jpg" />
 </a></p>
 
 ### CLONE
@@ -50,7 +50,6 @@ Taken from [LICENSE](LICENSE).
 * python 2.7
 
 ### SCREENSHOT
-![Shot](https://github.com/UndeadSec/EvilURL/blob/master/Screens/sc.png)
+![Shot](https://github.com/UndeadSec/EvilURL/blob/master/sc.png)
 
-More in [Screens](Screens)
 
