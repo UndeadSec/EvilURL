@@ -7,9 +7,6 @@
   An unicode domain phishing generator for educational purposes.
 </p>
 
-## TESTED ON
-[![Kali)](https://www.google.com/s2/favicons?domain=https://www.kali.org/)](https://www.kali.org) **Kali Linux - ROLLING EDITION**
-
 ## VIDEO DEMO
 <p align="center">
 <a href="#">
@@ -49,7 +46,8 @@ Taken from [LICENSE](LICENSE).
 
 * python 2.7
 
+## TESTED ON
+[![Kali)](https://www.google.com/s2/favicons?domain=https://www.kali.org/)](https://www.kali.org) **Kali Linux - ROLLING EDITION**
+
 ### SCREENSHOT
 ![Shot](https://github.com/UndeadSec/EvilURL/blob/master/sc.png)
-
-
