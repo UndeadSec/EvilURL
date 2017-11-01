@@ -4,7 +4,7 @@
 
 <h1 align="center">EvilURL</h1>
 <p align="center">
-  An unicode domain phishing generator for educational purposes.
+  An unicode domain phishing generator for IDN Homograph Attack.
 </p>
 
 ## VIDEO DEMO
