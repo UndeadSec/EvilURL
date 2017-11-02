@@ -7,7 +7,7 @@
 #------------------------------------------------------
 from os import system
 RED, WHITE, GREEN, END, YELLOW = '\033[91m', '\33[97m', '\033[1;32m', '\033[0m', '\33[93m'
-names = ['Cyrillic Small Letter A', 'Greek Lunate Sigma Symbol', 'Cyrillic Small Letter Es', 
+names = ['Cyrillic Small Letter A', 'Greek Lunate Sigma Symbol', 
 'Cyrillic Small Letter Ie', 'Cyrillic Small Letter O', 'Cyrillic Small Letter Er',
 'Cyrillic Small Letter Dze', 'Cyrillic Small Letter Komi De', 'Cyrillic Small Letter Qa',
 'Cyrillic Small Letter We']
@@ -56,53 +56,52 @@ def main():
         urlUn += unicodes[0] + ', '
     if "C" in url.upper():
         makeEvil('c', names[1], unicodes[1], url.replace('c', u'ϲ'), end)
-        makeEvil('c', names[2], unicodes[2], url.replace('c', u'с'), end)
         urlMore = urlMore.replace('c', u'с')
         urlChars += 'c, '
         urlNms += names[1] + ', '
         urlUn += unicodes[1] + ', '
     if "E" in url.upper():
-        makeEvil('e', names[3], unicodes[3], url.replace('e', u'е'), end)
+        makeEvil('e', names[2], unicodes[2], url.replace('e', u'е'), end)
         urlMore = urlMore.replace('e', u'e')
         urlChars += 'e, '
-        urlNms += names[3] + ', '
-        urlUn += unicodes[3] + ', '
+        urlNms += names[2] + ', '
+        urlUn += unicodes[2] + ', '
     if "O" in url.upper():
-        makeEvil('o', names[4], unicodes[4], url.replace('o', u'о'), end)
+        makeEvil('o', names[3], unicodes[3], url.replace('o', u'о'), end)
         urlMore = urlMore.replace('o', u'о')
         urlChars += 'o, '
-        urlNms += names[4] + ', '
-        urlUn += unicodes[4] + ', '
+        urlNms += names[3] + ', '
+        urlUn += unicodes[3] + ', '
     if "P" in url.upper():
-        makeEvil('p', names[5], unicodes[5], url.replace('p', u'р'), end)
+        makeEvil('p', names[4], unicodes[4], url.replace('p', u'р'), end)
         urlMore = urlMore.replace('p', u'р')
         urlChars += 'p, '
-        urlNms += names[5] + ', '
-        urlUn += unicodes[5] + ', '
+        urlNms += names[4] + ', '
+        urlUn += unicodes[4] + ', '
     if "S" in url.upper():
-        makeEvil('s', names[6], unicodes[6], url.replace('s', u'ѕ'), end)
+        makeEvil('s', names[5], unicodes[5], url.replace('s', u'ѕ'), end)
         urlMore = urlMore.replace('s', u'ѕ')
         urlChars += 's, '
-        urlNms += names[6] + ', '
-        urlUn += unicodes[6] + ', '
+        urlNms += names[5] + ', '
+        urlUn += unicodes[5] + ', '
     if "D" in url.upper():
-        makeEvil('d', names[7], unicodes[7], url.replace('d', u'ԁ'), end)
+        makeEvil('d', names[6], unicodes[6], url.replace('d', u'ԁ'), end)
         urlMore = urlMore.replace('d', u'ԁ')
         urlChars += 'd, '
-        urlNms += names[7] + ', '
-        urlUn += unicodes[7] + ', '
+        urlNms += names[6] + ', '
+        urlUn += unicodes[6] + ', '
     if "Q" in url.upper():
-        makeEvil('q', names[8], unicodes[8], url.replace('q', u'ԛ'), end)
+        makeEvil('q', names[7], unicodes[7], url.replace('q', u'ԛ'), end)
         urlMore = urlMore.replace('q', u'ԛ')
         urlChars += 'q, '
-        urlNms += names[8] + ', '
-        urlUn += unicodes[8] + ', '
+        urlNms += names[7] + ', '
+        urlUn += unicodes[7] + ', '
     if "W" in url.upper():
-        makeEvil('w', names[9], unicodes[9], url.replace('w', u'ԝ'), end)
+        makeEvil('w', names[8], unicodes[8], url.replace('w', u'ԝ'), end)
         urlMore = urlMore.replace('w', u'ԝ')
         urlChars += 'w.'
-        urlNms += names[9] + '.'
-        urlUn += unicodes[9] + '.'
+        urlNms += names[8] + '.'
+        urlUn += unicodes[8] + '.'
     print '\n\n{0}[   MORE EXTENSIVE EVIL URL:   ]{1}'.format(RED, END)
     makeEvil(urlChars, urlNms, urlUn, urlMore, end)
 main()
