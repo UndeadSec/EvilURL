@@ -25,6 +25,8 @@ cd EvilURL
 
 ```
 python evilurl.py
+or
+python3 evilurl3.py
 ```
 ## DISCLAIMER
 <p align="center">
@@ -44,7 +46,9 @@ Taken from [LICENSE](LICENSE).
 
 ### PREREQUISITES
 
-* python 2.7
+* python 2.7 for evilurl.py
+* python 3.x for evilurl3.py
+
 
 ## TESTED ON
 [![Kali)](https://www.google.com/s2/favicons?domain=https://www.kali.org/)](https://www.kali.org) **Kali Linux - ROLLING EDITION**
