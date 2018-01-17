@@ -7,6 +7,7 @@
   Generate unicode evil domains for IDN Homograph Attack and detect them.
 </p>
 
+Stay Tuned on Twitter <a href="https://twitter.com/A1S0N_">@A1S0N_</a>
 ### PREREQUISITES
 
 * python 3.x for evilurl3.py
@@ -28,7 +29,6 @@ cd EvilURL
 ```
 python3 evilurl.py
 ```
-
 
 ## DISCLAIMER
 <p align="center">
