@@ -1,17 +1,19 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/UndeadSec/EvilURL/master/evilurl.png">
+  <img src="https://raw.githubusercontent.com/UndeadSec/EvilURL/master/evilurl.png">  
 </p>
 
-<h1 align="center">EvilURL</h1>
+<h1 align="center">EvilURL v.2</h1>
 <p align="center">
-  An unicode domain phishing generator for IDN Homograph Attack.
+  Generate unicode evil domains for IDN Homograph Attack and detect them.
 </p>
 
-## VIDEO DEMO
-<p align="center">
-<a href="https://youtu.be/ug5ZuezbD3c">
-  <img src="https://raw.githubusercontent.com/UndeadSec/EvilURL/master/video.png" />
-</a></p>
+### PREREQUISITES
+
+* python 3.x for evilurl3.py
+
+
+## TESTED ON
+[![Kali)](https://www.google.com/s2/favicons?domain=https://www.kali.org/)](https://www.kali.org) **Kali Linux - ROLLING EDITION**
 
 ### CLONE
 ```
@@ -24,10 +26,10 @@ cd EvilURL
 ```
 
 ```
-python evilurl.py
-or
-python3 evilurl3.py
+python3 evilurl.py
 ```
+
+
 ## DISCLAIMER
 <p align="center">
   JUST USE TO EDUCATIONAL PURPOSES
@@ -44,14 +46,26 @@ OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE."
 Taken from [LICENSE](LICENSE).
 
-### PREREQUISITES
-
-* python 2.7 for evilurl.py
-* python 3.x for evilurl3.py
-
-
-## TESTED ON
-[![Kali)](https://www.google.com/s2/favicons?domain=https://www.kali.org/)](https://www.kali.org) **Kali Linux - ROLLING EDITION**
-
 ### SCREENSHOT
 ![Shot](https://github.com/UndeadSec/EvilURL/blob/master/sc.png)
+
+### CHANGELOG
+* **Full script updated to Python 3.x**
+
+  { Python 2.x support closed }
+  
+* **CheckURL Module.**
+  
+  { Now you can check if an url is evil.
+  
+    Now you can check connection from an evil url. }
+    
+* **Better interactivity.**
+  
+  { Better interface and design. }
+
+### VIDEO DEMO (not updated)
+<p align="center">
+<a href="https://youtu.be/ug5ZuezbD3c">
+  <img src="https://raw.githubusercontent.com/UndeadSec/EvilURL/master/video.png" />
+</a></p>
