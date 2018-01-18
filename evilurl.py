@@ -11,7 +11,6 @@ from platform import python_version
 from sys import exit
 from time import sleep
 from os import path
-from checkURL.checkURL import *
 
 version = python_version().startswith('2', 0, len(python_version()))
 if version:
