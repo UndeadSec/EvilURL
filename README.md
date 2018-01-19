@@ -10,7 +10,7 @@
 Stay Tuned on Twitter <a href="https://twitter.com/A1S0N_">@A1S0N_</a>
 ### PREREQUISITES
 
-* python 3.x for evilurl3.py
+* python 3.x 
 
 
 ## TESTED ON
