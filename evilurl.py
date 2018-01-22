@@ -11,6 +11,9 @@ from platform import python_version
 from sys import exit
 from time import sleep
 from os import path
+from argparse import ArgumentParser, RawDescriptionHelpFormatter
+from textwrap import dedent
+from socket import socket, AF_INET, SOCK_STREAM, gethostbyname, gaierror
 
 version = python_version().startswith('2', 0, len(python_version()))
 if version:
@@ -146,7 +149,7 @@ def check_url(url):
     try:
         url = gethostbyname(url)
     except gaierror as err:
-        error = '{1}[*] {0}{2}\n'.format(err,yellow,END)
+        error = '{1}[*] {0}{2}\n'.format(err,YELLOW,END)
         return error
         exit(1)
 
@@ -154,9 +157,9 @@ def check_url(url):
     check = s.connect_ex((url,80))
 
     if check == 0:
-        msg = '{0}[*] Connection accepted{1}\n'.format(green,END)
+        msg = '{0}[*] Connection accepted{1}\n'.format(GREEN,END)
     else:
-        msg = '{0}[*] Connection refused{1}\n'.format(green, END)
+        msg = '{0}[*] Connection refused{1}\n'.format(GREEN, END)
 
     return msg
 
@@ -172,10 +175,10 @@ def check_EVIL(url):
     result = [bad_chars[i] for i in range(len(bad_chars)) if bad_chars[i] in url]
 
     if result:
-        msg = '\n{0}[*] Evil URL detected: {1}{2}{3}{1}'.format(yellow,END,red,url)
-        msg += '\n{0}[*] Evil characters used: {1}{2}{3}{1}'.format(yellow,END,red,result)
+        msg = '\n{0}[*] Evil URL detected: {1}{2}{3}{1}'.format(YELLOW,END,RED,url)
+        msg += '\n{0}[*] Evil characters used: {1}{2}{3}{1}'.format(YELLOW,END,RED,result)
     else:
-        msg = '\n{0}[*] Evil URL NOT detected:{1} {2}{3}{1}'.format(yellow, END, green, url)
+        msg = '\n{0}[*] Evil URL NOT detected:{1} {2}{3}{1}'.format(YELLOW, END, GREEN, url)
 
     return msg
 
@@ -210,12 +213,12 @@ def check_list_url(file):
         check_result = check_url(url)
 
         if result:
-            msg += '\n{0}[*] Evil URL detected: {1}{2}{3}{1}'.format(yellow, END, red, url)
-            msg += '\n{0}[*] Evil characters used: {1}{2}{3}{1}\n'.format(yellow, END, red, result)
+            msg += '\n{0}[*] Evil URL detected: {1}{2}{3}{1}'.format(YELLOW, END, RED, url)
+            msg += '\n{0}[*] Evil characters used: {1}{2}{3}{1}\n'.format(YELLOW, END, RED, result)
             msg += check_result
 
         else:
-            msg += '\n{0}[*] Evil URL NOT detected:{1} {2}{3}{1}\n'.format(yellow, END, green, url)
+            msg += '\n{0}[*] Evil URL NOT detected:{1} {2}{3}{1}\n'.format(YELLOW, END, GREEN, url)
             msg += check_result
 
     return msg
