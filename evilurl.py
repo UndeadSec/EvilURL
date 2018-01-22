@@ -11,8 +11,6 @@ from platform import python_version
 from sys import exit
 from time import sleep
 from os import path
-from argparse import ArgumentParser, RawDescriptionHelpFormatter
-from textwrap import dedent
 from socket import socket, AF_INET, SOCK_STREAM, gethostbyname, gaierror
 
 version = python_version().startswith('2', 0, len(python_version()))
