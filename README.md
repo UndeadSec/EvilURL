@@ -14,12 +14,11 @@ Github: <a href="https://github.com/A1S0N">@A1S0N</a>
 
 * **Vandré Augusto** | 
 Twitter: <a href="https://twitter.com/dr1nKoRdi3">@dr1nKoRdi3</a>
-Github: <a href="https://github.com/dr1nk0rdi3">@dr1nKoRdi3</a>
+Github: <a href="https://github.com/dr1nk0rdi3">@dr1nK0Rdi3</a>
 
 ### PREREQUISITES
 
 * python 3.x 
-
 
 ## TESTED ON
 [![Kali)](https://www.google.com/s2/favicons?domain=https://www.kali.org/)](https://www.kali.org) **Kali Linux - ROLLING EDITION**
