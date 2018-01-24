@@ -2,12 +2,20 @@
   <img src="https://raw.githubusercontent.com/UndeadSec/EvilURL/master/evilurl.png">  
 </p>
 
-<h1 align="center">EvilURL v.2</h1>
+<h1 align="center">EvilURL v2.0</h1>
 <p align="center">
   Generate unicode evil domains for IDN Homograph Attack and detect them.
 </p>
 
-Stay Tuned on Twitter <a href="https://twitter.com/A1S0N_">@A1S0N_</a>
+### MAINTAINERS
+* **Alisson Moretto** | 
+Twitter: <a href="https://twitter.com/A1S0N_">@A1S0N_</a>
+Github: <a href="https://github.com/A1S0N">@A1S0N</a>
+
+* **Vandré Augusto** | 
+Twitter: <a href="https://twitter.com/dr1nKoRdi3">@dr1nKoRdi3</a>
+Github: <a href="https://github.com/dr1nk0rdi3">@dr1nKoRdi3</a>
+
 ### PREREQUISITES
 
 * python 3.x 
