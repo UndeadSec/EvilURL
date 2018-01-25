@@ -74,7 +74,7 @@ Taken from [LICENSE](LICENSE).
 ## Donation
 If you liked our work and want to support us, you can donate :D
 
-<img src="https://github.com/Undead/EvilURL/blob/master/donation.png"></img>
+<img src="https://raw.githubusercontent.com/UndeadSec/EvilURL/master/donation.png"></img>
 
 Bitcoin Address: 1EmJ5KiAKzpyqGGHopAq9qukrVPS47T9bA
 
