@@ -131,7 +131,7 @@ def checkEvil(url):
 
 if __name__ == "__main__":
     banner()
-    parser = argparse.ArgumentParser(usage="evilurl-cli.py {domain} [options]", description="Run a simple deauth attack")
+    parser = argparse.ArgumentParser(usage="evilurl-cli.py {domain} [options]", description="Command line version of EvilURL")
     parser.add_argument("domain", help="Domain name with termination (example.com)")
     parser.add_argument("-cE", dest="check", action="store_true", help="Check if url is evil (won't generate evil url)")
     parser.add_argument("-cC", dest="checkConnection", action="store_true", help="Check generated/input domain connections")
