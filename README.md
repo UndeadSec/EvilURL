@@ -20,7 +20,7 @@ Github: <a href="https://github.com/dr1nk0rdi3">@dr1nK0Rdi3</a>
 
 * **deantonious** |
 Twitter: <a href="https://twitter.com/deantonious">@deantonious</a>
-Github: <a href="https://github.com/deantonious">@dr1nK0Rdi3</a>
+Github: <a href="https://github.com/deantonious">@deantonious</a>
 
 ### PREREQUISITES
 
