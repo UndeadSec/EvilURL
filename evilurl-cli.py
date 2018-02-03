@@ -9,6 +9,14 @@ from time import sleep
 from os import path
 from os import system
 
+def banner():
+    print('''
+  _____       _ _ _   _ ____  _           ____ _     ___ 
+ | ____|_   _(_) | | | |  _ \| |         / ___| |   |_ _|
+ |  _| \ \ / / | | | | | |_) | |   _____| |   | |    | |    
+ | |___ \ V /| | | |_| |  _ <| |__|_____| |___| |___ | | 
+ |_____| \_/ |_|_|\___/|_| \_\_____|     \____|_____|___|  v1.0                                                       
+''')
 names = ["Cyrillic Small Letter A",
          "Greek Lunate Sigma Symbol",
          "Cyrillic Small Letter Ie",
@@ -122,7 +130,7 @@ def checkEvil(url):
     return msg
 
 if __name__ == "__main__":
-
+    banner()
     parser = argparse.ArgumentParser(usage="evilurl-cli.py {domain} [options]", description="Run a simple deauth attack")
     parser.add_argument("domain", help="Domain name with termination (example.com)")
     parser.add_argument("-cE", dest="check", action="store_true", help="Check if url is evil (won't generate evil url)")
