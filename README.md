@@ -32,9 +32,15 @@ git clone https://github.com/UndeadSec/EvilURL.git
 ```
 cd EvilURL
 ```
+**Interface**
 
 ```
 python3 evilurl.py
+```
+
+**Command line**
+```
+python3 evilurl-cli.py
 ```
 
 ## DISCLAIMER
