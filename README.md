@@ -16,11 +16,9 @@ Github: <a href="https://github.com/A1S0N">@A1S0N</a>
 Twitter: <a href="https://twitter.com/dr1nKoRdi3">@dr1nKoRdi3</a>
 Github: <a href="https://github.com/dr1nk0rdi3">@dr1nK0Rdi3</a>
 
-#### OTHER CONTRIBUTORS
+##### OTHER CONTRIBUTORS
 
-* **deantonious** |
-Twitter: <a href="https://twitter.com/deantonious">@deantonious</a>
-Github: <a href="https://github.com/deantonious">@deantonious</a>
+###### - **deantonious** [ Added cli version <a href="https://github.com/UndeadSec/EvilURL/pull/4">#4</a> ] 
 
 ### PREREQUISITES
 
@@ -55,7 +53,7 @@ python3 evilurl-cli.py
 
 ## DISCLAIMER
 <p align="center">
-  JUST USE TO EDUCATIONAL PURPOSES
+  TO BE USED FOR EDUCATIONAL PURPOSES ONLY
 </p>
 
 The use of the EvilURL is COMPLETE RESPONSIBILITY of the END-USER. Developer assume NO liability and are NOT responsible for any misuse or damage caused by this program.
