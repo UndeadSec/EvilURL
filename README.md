@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/UndeadSec/EvilURL/master/evilurl.png">  
+  <img src="https://raw.githubusercontent.com/UndeadSec/EvilURL/master/Images/evilurl.png">  
 </p>
 
 <h1 align="center">EvilURL v2.0</h1>
@@ -68,7 +68,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE."
 Taken from [LICENSE](LICENSE).
 
 ### SCREENSHOT
-![Shot](https://github.com/UndeadSec/EvilURL/blob/master/sc.png)
+![Shot](https://github.com/UndeadSec/EvilURL/blob/master/Images/sc.png)
 
 ### CHANGELOG
 * **Full script updated to Python 3.x**
@@ -88,12 +88,12 @@ Taken from [LICENSE](LICENSE).
 ## Donation
 If you liked our work and want to support us, you can donate :D
 
-<img src="https://raw.githubusercontent.com/UndeadSec/EvilURL/master/donation.png"></img>
+<img src="https://raw.githubusercontent.com/UndeadSec/EvilURL/master/Images/donation.png"></img>
 
 Bitcoin Address: 1EmJ5KiAKzpyqGGHopAq9qukrVPS47T9bA
 
 ### VIDEO DEMO (not updated)
 <p align="center">
 <a href="https://youtu.be/ug5ZuezbD3c">
-  <img src="https://raw.githubusercontent.com/UndeadSec/EvilURL/master/video.png" />
+  <img src="https://raw.githubusercontent.com/UndeadSec/EvilURL/master/Images/video.png" />
 </a></p>
