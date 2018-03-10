@@ -23,17 +23,60 @@ from os import system
 
 RED, WHITE, GREEN, END, YELLOW = '\033[91m', '\33[97m', '\033[1;32m', '\033[0m', '\33[93m'
 
-names = ['Cyrillic Small Letter A',
-         'Greek Lunate Sigma Symbol',
-         'Cyrillic Small Letter Ie',
-         'Cyrillic Small Letter O',
-         'Cyrillic Small Letter Er',
-         'Cyrillic Small Letter Dze',
-         'Cyrillic Small Letter Komi De',
-         'Cyrillic Small Letter Qa',
-         'Cyrillic Small Letter We']
-
-unicodes = ['\u0430', '\u03F2', '\u0435', '\u043E', '\u0440', '\u0455', '\u0501', '\u051B', '\u051D']
+unicodes = {
+    'a': '\u0430',
+    'A': '\u0410',
+    'b': '\u042C',
+    'B': '\u0412',
+    'c': '\u0441',
+    'C': '\u0421',
+    'd': '\u0501',
+    'D': '',
+    'e': '\u0435',
+    'E': '\u0415',
+    'f': '',
+    'F': '',
+    'g': '',
+    'G': '',
+    'h': '\u04BB',
+    'H': '\u041D',
+    'i': '\u0456',
+    'I': '\u0406',
+    'j': '\u0458',
+    'J': '\u0408',
+    'k': '',
+    'K': '',
+    'l': '',
+    'L': '',
+    'm': '',
+    'M': '\u041C',
+    'n': '',
+    'N': '',
+    'o': '\u043E',
+    'O': '\u041E',
+    'p': '\u0440',
+    'P': '\u0420',
+    'q': '\u051B',
+    'Q': '\u051A',
+    'r': '',
+    'R': '',
+    's': '\u0455',
+    'S': '\u0405',
+    't': '',
+    'T': '\u0422',
+    'u': '',
+    'U': '',
+    'v': '',
+    'V': '',
+    'w': '\u051D',
+    'W': '\u051C',
+    'x': '\u0445',
+    'X': '\u0425',
+    'y': '\u0443',
+    'Y': '\u04AE',
+    'z': '',
+    'Z': '',
+}
 
 def message():
     system('clear')
@@ -56,85 +99,38 @@ How to use:
  Insert name: example
  Insert level domain: .com'''.format(RED, END))
 
-def makeEvil(char, unicd, uninum, newurl, end):
-    print('\n{2}[*] Char replaced: %s\n[*] Using Unicode: %s\n[*] Unicode number: %s\n{0}[*] Evil url: %s%s{1}\n-------------------------------'.format(GREEN, END, YELLOW) % (char, unicd, uninum, newurl, end))
+
+def makeEvil(char, uninum, newurl, end):
+    print(
+        '\n{2}[*] Char replaced: %s\n[*] Unicode number: %s\n{0}[*] Evil url: %s%s{1}\n-------------------------------'.format(
+            GREEN, END, YELLOW) % (char, uninum, newurl, end))
+
 
 def main():
     message()
     url = input("\n{0}>{1} Insert name: ".format(RED, END))
     end = input("\n{0}>{1} Insert level domain: ".format(RED, END))
-    url = url.lower()
-    urlMore = url
-    urlChars = ''
-    urlNms = ''
-    urlUn = ''
 
-    if "A" in url.upper():
-        makeEvil('a', names[0], unicodes[0], url.replace('a', '\u0430'), end)
-        urlMore = urlMore.replace('a', '\u0430')
-        urlChars += 'a, '
-        urlNms += names[0] + ', '
-        urlUn += unicodes[0] + ', '
+    # -------------- FIND CHAR THAT CAN BE REPLACED ----------------- #
+    replaced = []
+    for i in range(0, len(url)):
+        if unicodes[url[i]]:
+            replaced.append(i)
 
-    if "C" in url.upper():
-        makeEvil('c', names[1], unicodes[1], url.replace('c', '\u03F2'), end)
-        urlMore = urlMore.replace('c','\u03F2')
-        urlChars += 'c, '
-        urlNms += names[1] + ', '
-        urlUn += unicodes[1] + ', '
+    # -------------- Begin REPLACE CHAR ----------------- #
+    total = 1 << len(replaced)
+    for i in range(1, total):
+        urls = list(url)
+        rep_char, uni_char = '', ''
+        for j in range(0, len(replaced)):
+            if (i & 1 << j) != 0:
+                char = urls[replaced[j]]
+                rep_char += char + ', '
+                uni_char += unicodes[char] + ', '
+                urls[replaced[j]] = unicodes[char]
+        makeEvil(rep_char[:-1], uni_char[:-1], ''.join(urls), end)
 
-    if "E" in url.upper():
-        makeEvil('e', names[2], unicodes[2], url.replace('e', '\u0435'), end)
-        urlMore = urlMore.replace('e', '\u0435')
-        urlChars += 'e, '
-        urlNms += names[2] + ', '
-        urlUn += unicodes[2] + ', '
-
-    if "O" in url.upper():
-        makeEvil('o', names[3], unicodes[3], url.replace('o', '\u043E'), end)
-        urlMore = urlMore.replace('o', '\u043E')
-        urlChars += 'o, '
-        urlNms += names[3] + ', '
-        urlUn += unicodes[3] + ', '
-
-    if "P" in url.upper():
-        makeEvil('p', names[4], unicodes[4], url.replace('p', '\u0440'), end)
-        urlMore = urlMore.replace('p', '\u0440')
-        urlChars += 'p, '
-        urlNms += names[4] + ', '
-        urlUn += unicodes[4] + ', '
- 
-    if "S" in url.upper():
-        makeEvil('s', names[5], unicodes[5], url.replace('s', '\u0455'), end)
-        urlMore = urlMore.replace('s', '\u0455')
-        urlChars += 's, '
-        urlNms += names[5] + ', '
-        urlUn += unicodes[5] + ', '
-
-    if "D" in url.upper():
-        makeEvil('d', names[6], unicodes[6], url.replace('d', '\u0501'), end)
-        urlMore = urlMore.replace('d', '\u0501')
-        urlChars += 'd, '
-        urlNms += names[6] + ', '
-        urlUn += unicodes[6] + ', '
-
-    if "Q" in url.upper():
-        makeEvil('q', names[7], unicodes[7], url.replace('q', '\u051B'), end)
-        urlMore = urlMore.replace('q','\u051B')
-        urlChars += 'q, '
-        urlNms += names[7] + ', '
-        urlUn += unicodes[7] + ', '
- 
-    if "W" in url.upper():
-        makeEvil('w', names[8], unicodes[8], url.replace('w','\u051D'), end)
-        urlMore = urlMore.replace('w', '\u051D')
-        urlChars += 'w.'
-        urlNms += names[8] + '.'
-        urlUn += unicodes[8] + '.'
-
-    print ('\n\n{0}[   MORE EXTENSIVE EVIL URL:   ]{1}'.format(RED, END))
-    makeEvil(urlChars, urlNms, urlUn, urlMore, end)
-
+    print('\n{0}[*] Total Evil url: %s{1}\n'.format(GREEN, END, YELLOW) % (total - 1))
 # -------------- BEGIN CHECKURL MODULE----------------- #
 def check_url(url):
 
@@ -183,7 +179,7 @@ def check_EVIL(url):
 def urls_list(file):
     '''
     Read the file to verify Evil URL
-    :param file: file with a list of Evil URLs 
+    :param file: file with a list of Evil URLs
     :return: file reading
     '''
 
