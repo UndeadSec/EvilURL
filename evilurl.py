@@ -121,14 +121,14 @@ def main():
     total = 1 << len(replaced)
     for i in range(1, total):
         urls = list(url)
-        rep_char, uni_char = '', ''
+        rep_char, uni_char = [], []
         for j in range(0, len(replaced)):
             if (i & 1 << j) != 0:
                 char = urls[replaced[j]]
-                rep_char += char + ', '
-                uni_char += unicodes[char] + ', '
+                rep_char.append(char)
+                uni_char.append(unicodes[char])
                 urls[replaced[j]] = unicodes[char]
-        makeEvil(rep_char[:-1], uni_char[:-1], ''.join(urls), end)
+        makeEvil(','.join(rep_char), ','.join(uni_char), ''.join(urls), end)
 
     print('\n{0}[*] Total Evil url: %s{1}\n'.format(GREEN, END, YELLOW) % (total - 1))
 # -------------- BEGIN CHECKURL MODULE----------------- #
