@@ -165,8 +165,7 @@ def check_EVIL(url):
     :return: result of check and the evil chars
     '''
 
-    bad_chars = ['\u0430', '\u03F2', '\u0435', '\u043E', '\u0440', '\u0455', '\u0501', '\u051B', '\u051D']
-    result = [bad_chars[i] for i in range(len(bad_chars)) if bad_chars[i] in url]
+    result = [url[i] for i in range(len(url)) if url[i] in unicodes.values()]
 
     if result:
         msg = '\n{0}[*] Evil URL detected: {1}{2}{3}{1}'.format(YELLOW,END,RED,url)
