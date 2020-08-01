@@ -50,7 +50,35 @@ python3 evilurl.py
 ```
 python3 evilurl-cli.py
 ```
+**Docker**
+```bash
+docker build -t evilurl .
+```
+Run the container
+```bash
+docker run -dti --name evilurl evilurl
+```
+Execute the tool inside of container depends on which tool you want to run:
 
+Command line
+
+```bash
+docker exec -ti evilurl python3 evilurl-cli.py -h
+```
+or 
+
+Interface
+
+```bash
+docker exec -ti evilurl python3 evilurl-cli.py
+```
+Verify the image
+
+```bash
+➜  EvilURL git:(master) ✗ docker images
+REPOSITORY                    TAG                    IMAGE ID            CREATED              SIZE
+evilurl                       latest                 a89cadb3296f        About a minute ago   72.6MB
+```
 ## DISCLAIMER
 <p align="center">
   TO BE USED FOR EDUCATIONAL PURPOSES ONLY
