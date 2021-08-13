@@ -85,12 +85,6 @@ Taken from [LICENSE](LICENSE).
   
   { Better interface and design. }
 
-## Donation
-If you liked our work and want to support us, you can donate :D
-
-<img src="https://raw.githubusercontent.com/UndeadSec/EvilURL/master/Images/donation.png"></img>
-
-Bitcoin Address: 1EmJ5KiAKzpyqGGHopAq9qukrVPS47T9bA
 
 ### VIDEO DEMO (not updated)
 <p align="center">
