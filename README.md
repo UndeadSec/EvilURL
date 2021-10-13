@@ -5,11 +5,6 @@ Generate unicode evil domains for IDN Homograph Attack and detect them.
 The EvilURL is released under a BSD-style license. See
 [LICENSE](LICENSE) for more details.
 
-### MAINTAINERS
-* **Alisson Moretto** | 
-Twitter: <a href="https://twitter.com/A1S0N_">@A1S0N_</a>
-Github: <a href="https://github.com/A1S0N">@A1S0N</a>
-
 ### CLONE
 ```
 git clone https://github.com/UndeadSec/EvilURL.git
