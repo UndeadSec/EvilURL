@@ -112,6 +112,7 @@ def gen(url, tld, checkConnection=False, output=False, aval=False):
                             name.append(u[chr])
                     newurl = newurl.replace(w, chr)
         makeEvil(chars, unicd, name, newurl+tld, url, output)
+        if checkConnection: printParser(check_url(newurl+tld), output)
         if aval:
             if checkAval(newurl+tld) is None:
                 printParser('{0}[{1}*{0}]{1} Avaliable domain'.format(GREEN, END), output)
@@ -208,7 +209,7 @@ def parseHandler():
         printParser(check_EVIL(domain), output)
     elif filepath:
         urls_list(filepath, checkConnection, output)
-    if checkConnection and not filepath:
+    if checkConnection and not filepath and not generate:
         printParser(check_url(domain), output)
     if output:
         print('\n{1}[{2}*{1}]{2} Logs stored to {0}'.format(output, GREEN, END))
