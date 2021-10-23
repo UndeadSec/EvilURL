@@ -1,6 +1,6 @@
 EvilURL v3.0
 ==
-Generate unicode evil domains for IDN Homograph Attack and detect them.
+Generate unicode domains for IDN Homograph Attack and detect them.
 
 The EvilURL is released under a BSD-style license. See
 [LICENSE](LICENSE) for more details.
