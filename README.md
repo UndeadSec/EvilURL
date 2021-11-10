@@ -11,7 +11,7 @@ git clone https://github.com/UndeadSec/EvilURL.git
 ```
 ### INSTALL
 ```
-pip install python-namp python-whois
+pip install python-nmap python-whois
 ```
 ### RUNNING
 ```
