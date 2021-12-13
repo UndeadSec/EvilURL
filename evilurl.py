@@ -115,9 +115,9 @@ def gen(url, tld, checkConnection=False, output=False, aval=False):
         if checkConnection: printParser(check_url(newurl+tld), output)
         if aval:
             if checkAval(newurl+tld) is None:
-                printParser('{0}[{1}*{0}]{1} Avaliable domain'.format(GREEN, END), output)
+                printParser('{0}[{1}*{0}]{1} Available domain'.format(GREEN, END), output)
             else:
-                printParser('{0}[{1}!{0}]{1} Unavaliable domain'.format(YELLOW, END), output)
+                printParser('{0}[{1}!{0}]{1} Unavailable domain'.format(YELLOW, END), output)
 
 # -------------- BEGIN CHECKURL MODULE----------------- #
 def check_url(url):
