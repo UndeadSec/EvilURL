@@ -181,7 +181,7 @@ def parseHandler():
     parser.add_argument("-c", dest="checkConnection", action="store_true", help="Check generated/input domain connections")
     parser.add_argument("-o", dest="output", help="Save generated evil domains to a file")
     parser.add_argument("-f", dest="filepath", help="Import domains from a file and check them")
-    parser.add_argument("-a", dest="aval", action="store_true", help="Check if domain is avaliable")
+    parser.add_argument("-a", dest="aval", action="store_true", help="Check if domain is available")
 
     if len(argv) == 1:
         parser.print_help()
