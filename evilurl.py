@@ -42,7 +42,7 @@ def message(output=False):
 {0}88         `8b,d8'    88  88{1}  Y8a.    .a8P  88     `8b   88           
 {0}88888888888  "8"      88  88{1}   `"Y8888Y"'   88      `8b  88888888  {1}
 
-[ by UNDEAD{0}SEC{1} - Alisson Moretto @A1S0N_ ]\n'''.format(RED, END), output)
+[ by UNDEAD{0}SEC{1} - Alisson Moretto @UndeadSec ]\n'''.format(RED, END), output)
 
 def cleanTxt(txt):
     for i in (RED, WHITE, GREEN, END, YELLOW):
