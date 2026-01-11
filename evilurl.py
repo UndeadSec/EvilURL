@@ -28,6 +28,7 @@ unicodes = [{'\u0430':'Cyrillic Small Letter A'},
          {'\u0455':'Cyrillic Small Letter Dze'},
          {'\u0501':'Cyrillic Small Letter Komi De'},
          {'\u051B':'Cyrillic Small Letter Qa'},
+         {'\u0443':'Cyrillic small letter U'},
          {'\u051D':'Cyrillic Small Letter We'}]
 
 def message(output=False):
@@ -79,7 +80,7 @@ import itertools
 def gen(url, tld, checkConnection=False, output=False, aval=False):
     url = url.lower()
 
-    evils = [{'a':'\u0430'},{'c': '\u03F2'}, {'e': '\u0435'}, {'o': '\u043E'}, {'p': '\u0440'}, {'s': '\u0455'}, {'d': '\u0501'}, {'q': '\u051B'}, {'w': '\u051D'}]
+    evils = [{'a':'\u0430'},{'c': '\u03F2'}, {'e': '\u0435'}, {'o': '\u043E'}, {'p': '\u0440'}, {'s': '\u0455'}, {'d': '\u0501'}, {'q': '\u051B'}, {'y': '\u0443'}, {'w': '\u051D'}]
     e_matchs = []
 
     for em in evils:
